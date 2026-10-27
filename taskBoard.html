@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="nav">
+        <h1>My Task Board</h1>
+        <p>Manage your daily tasks</p>
+    </header>
+
+    <main>
+
+        <section id="Statistics">
+            <h2>Task Statistics - Bar</h2>
+            <p>Total Tasks: 6</p>
+            <p>Completed Tasks: 1</p>
+            <p>High Priority Tasks: 3</p>
+        </section>
+
+        <section>
+            <h2>Add New Task</h2>
+
+            <form>
+                <label for="task">Task Name:</label>
+                <input type="text" id="task" class="inputBox" placeholder="Enter your task name" required>
+
+                <br><br>
+
+                <label for="priority">Select Priority:</label>
+                <select id="priority">
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+
+                <br><br>
+
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Tasks List</h2>
+
+            <ol type="I">
+                <li>
+                    <input type="checkbox">
+                    Read Book (10 pages)
+                    <span class="low">Low</span>
+                    <button type="button">Delete</button>
+                </li>
+
+                <br>
+
+                <li>
+                    <input type="checkbox">
+                    Coding
+                    <span class="high">High</span>
+                    <button type="button">Delete</button>
+                </li>
+
+                <br>
+
+                <li>
+                    <input type="checkbox">
+                    Swimming 30 mins
+                    <span class="medium">Medium</span>
+                    <button type="button">Delete</button>
+                </li>
+
+                <br>
+
+                <li>
+                    <input type="checkbox">
+                    GYM today
+                    <span class="high">High</span>
+                    <button type="button">Delete</button>
+                </li>
+
+                <br>
+
+                <li>
+                    <input type="checkbox">
+                    Walk after Dinner
+                    <span class="high">High</span>
+                    <button type="button">Delete</button>
+                </li>
+
+                <br>
+
+                <li>
+                    <input type="checkbox">
+                    Drink 1 cup black coffee
+                    <span class="low">Low</span>
+                    <button type="button">Delete</button>
+                </li>
+
+                <br>
+
+                <li>
+                    <input type="checkbox">
+                    Buy grocesaries & Milk
+                    <span class="medium">Medium</span>
+                    <button type="button">Delete</button>
+                </li>
+            </ol>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id vel nesciunt voluptate fugiat nulla neque aspernatur porro natus suscipit ipsam!</p>
+    </footer>
+
+</body>
+</html>

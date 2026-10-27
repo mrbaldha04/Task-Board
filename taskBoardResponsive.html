@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Board</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <header class="nav">
+        <h1>My Task Board</h1>
+        <p>Manage your daily tasks</p>
+    </header>
+
+    <main>
+
+        <section id="Statistics">
+            <h2>Task Statistics - Bar</h2>
+
+            <div class="statistics-container">
+                <p>Total Tasks: 6</p>
+                <p>Completed Tasks: 1</p>
+                <p>High Priority Tasks: 3</p>
+            </div>
+        </section>
+
+        <section class="add-task">
+            <h2>Add New Task</h2>
+
+            <form>
+                <div class="form-group">
+                    <label for="task">Task Name:</label>
+                    <input
+                        type="text"
+                        id="task"
+                        class="inputBox"
+                        placeholder="Enter your task name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="priority">Select Priority:</label>
+                    <select id="priority">
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                    </select>
+                </div>
+
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <section class="task-section">
+            <h2>Tasks List</h2>
+
+            <ol type="I" class="tasks-list">
+
+                <li class="task-row">
+                    <input type="checkbox" id="task1">
+
+                    <div class="task-content">
+                        <label for="task1" class="task-name">
+                            Read Book (10 pages)
+                        </label>
+
+                        <details class="task-detail">
+                            <summary>View Details</summary>
+                            <p>Task: Read 10 pages of a book.</p>
+                            <p>Priority: Low</p>
+                            <p>Status: Update using the checkbox above.</p>
+                        </details>
+                    </div>
+
+                    <span class="low">Low</span>
+                    <button type="button" class="delete-btn">Delete</button>
+                </li>
+
+                <li class="task-row">
+                    <input type="checkbox" id="task2">
+
+                    <div class="task-content">
+                        <label for="task2" class="task-name">Coding</label>
+
+                        <details class="task-detail">
+                            <summary>View Details</summary>
+                            <p>Task: Practice coding.</p>
+                            <p>Priority: High</p>
+                            <p>Status: Update using the checkbox above.</p>
+                        </details>
+                    </div>
+
+                    <span class="high">High</span>
+                    <button type="button" class="delete-btn">Delete</button>
+                </li>
+
+                <li class="task-row">
+                    <input type="checkbox" id="task3">
+
+                    <div class="task-content">
+                        <label for="task3" class="task-name">
+                            Swimming 30 mins
+                        </label>
+
+                        <details class="task-detail">
+                            <summary>View Details</summary>
+                            <p>Task: Swim for 30 minutes.</p>
+                            <p>Priority: Medium</p>
+                            <p>Status: Update using the checkbox above.</p>
+                        </details>
+                    </div>
+
+                    <span class="medium">Medium</span>
+                    <button type="button" class="delete-btn">Delete</button>
+                </li>
+
+                <li class="task-row">
+                    <input type="checkbox" id="task4">
+
+                    <div class="task-content">
+                        <label for="task4" class="task-name">GYM today</label>
+
+                        <details class="task-detail">
+                            <summary>View Details</summary>
+                            <p>Task: Complete today's gym session.</p>
+                            <p>Priority: High</p>
+                            <p>Status: Update using the checkbox above.</p>
+                        </details>
+                    </div>
+
+                    <span class="high">High</span>
+                    <button type="button" class="delete-btn">Delete</button>
+                </li>
+
+                <li class="task-row">
+                    <input type="checkbox" id="task5">
+
+                    <div class="task-content">
+                        <label for="task5" class="task-name">
+                            Walk after Dinner
+                        </label>
+
+                        <details class="task-detail">
+                            <summary>View Details</summary>
+                            <p>Task: Go for a walk after dinner.</p>
+                            <p>Priority: High</p>
+                            <p>Status: Update using the checkbox above.</p>
+                        </details>
+                    </div>
+
+                    <span class="high">High</span>
+                    <button type="button" class="delete-btn">Delete</button>
+                </li>
+
+                <li class="task-row">
+                    <input type="checkbox" id="task6">
+
+                    <div class="task-content">
+                        <label for="task6" class="task-name">
+                            Drink 1 cup black coffee
+                        </label>
+
+                        <details class="task-detail">
+                            <summary>View Details</summary>
+                            <p>Task: Drink one cup of black coffee.</p>
+                            <p>Priority: Low</p>
+                            <p>Status: Update using the checkbox above.</p>
+                        </details>
+                    </div>
+
+                    <span class="low">Low</span>
+                    <button type="button" class="delete-btn">Delete</button>
+                </li>
+
+                <li class="task-row">
+                    <input type="checkbox" id="task7">
+
+                    <div class="task-content">
+                        <label for="task7" class="task-name">
+                            Buy groceries &amp; Milk
+                        </label>
+
+                        <details class="task-detail">
+                            <summary>View Details</summary>
+                            <p>Task: Buy groceries and milk.</p>
+                            <p>Priority: Medium</p>
+                            <p>Status: Update using the checkbox above.</p>
+                        </details>
+                    </div>
+
+                    <span class="medium">Medium</span>
+                    <button type="button" class="delete-btn">Delete</button>
+                </li>
+
+            </ol>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id vel nesciunt voluptate fugiat nulla neque aspernatur porro natus suscipit ipsam!
+        </p>
+    </footer>
+
+</body>
+</html>
